@@ -6,7 +6,7 @@
 #    By: dgerwig- <dgerwig-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/09 20:16:45 by dgerwig-          #+#    #+#              #
-#    Updated: 2024/03/25 21:06:18 by dgerwig-         ###   ########.fr        #
+#    Updated: 2024/04/13 16:55:45 by dgerwig-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,12 @@ fclean: clean
 	@rm -rf **/__pycache__
 	@rm -rf ./data/params.csv
 	@rm -rf ./data/errors.csv
+	@if [ ! -d "./plots_examples" ]; then \
+		mkdir -p ./plots_examples; \
+	fi
+	@if [ -d "./plots" ]; then \
+		cp -r ./plots/* ./plots_examples/; \
+	fi
 	@rm -rf ./plots
 	
 re:	fclean all
