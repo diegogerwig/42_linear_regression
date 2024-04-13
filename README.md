@@ -1,8 +1,6 @@
 # 42_linear_regression
 
-
-
-## INFO
+## DOC
     https://www.geeksforgeeks.org/ml-linear-regression/
     https://medium.com/analytics-vidhya/2-ways-to-train-a-linear-regression-model-part-1-e643dbef3df1
     https://medium.com/analytics-vidhya/2-ways-to-train-a-linear-regression-model-part-2-fdeb50fc58fa
